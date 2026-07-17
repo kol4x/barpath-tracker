@@ -1,0 +1,14 @@
+# Requirements per Bar Path Tracker (versione con object-tracking accurato)
+# Compatibili con Python 3.14: nessuna compilazione da sorgente richiesta.
+#
+# Nota: usiamo opencv-contrib-python-headless (non opencv-python-headless)
+# perche' il tracker CSRT (il piu' accurato) si trova nel modulo "contrib".
+# MediaPipe non e' piu' necessario: il tracciamento del bilanciere avviene
+# tramite object tracking classico, inizializzato dal punto scelto dall'utente.
+
+streamlit>=1.51.0
+opencv-contrib-python-headless>=4.11.0.86
+numpy>=2.3.2
+imageio>=2.34.2
+imageio-ffmpeg>=0.4.9
+streamlit-image-coordinates>=0.1.6
